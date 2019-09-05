@@ -1,0 +1,14 @@
+<button ng-click="deleteRow();">Remove Selected</button>
+<button (click)="onRemoveSelected()">delete</button>
+<ag-grid-angular #agGrid
+                 id="agGrid"
+                 style="width: 500px; height: 500px;"
+                 class="ag-theme-balham"
+                 [rowData]="rowData | async"
+                 [columnDefs]="columnDefs"
+                 [components]="components"
+                 [pagination]="true"
+                 [localeText]="localeText"
+                 rowSelection="multiple"
+                 >
+</ag-grid-angular>
